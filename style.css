@@ -1,0 +1,206 @@
+/* Custom Typeface (KCCS) */
+/*Note: This font does not contain the Euro or Pence currency symbols*/
+@font-face {
+  font-family: 'KCCS';
+  src: url('fonts/KCCS.woff2') format('woff2'),
+  url('fonts/KCCS.woff') format('woff'),
+  url('fonts/KCCS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Background Style for All Sections */
+/*the containers themselves*/
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px; /*arbitrary number for now*/
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+/*looks like a taped piece of paper behind every section*/
+.image-container img {
+  display: block; /*figure out if block or flex*/
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  /*filter: drop-shadow(1px 8px 3px rgba(0, 0, 0, 0.2));*/
+}
+
+/* Text On Top of Backgrounds */
+/*https://www.geeksforgeeks.org/how-to-place-text-on-image-using-html-and-css/*/
+.overlay-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*background-color: #fbfdf*/
+  background-color: rgba(251,253,253,0.3); /*transparent text box just in case taped sections don't show up*/
+  padding: 10px;
+  font-size: clamp(1rem, 2vw, 1.5rem); /*viewport width*/
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Unfixed Header for Hours*/
+.unfixed-header {
+  background-color: #4a3323;
+  color: #fdffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAEBD7;
+  padding: 10px 20px;
+}
+
+/*Either Image Logo or Text Logo*/
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #8C1F25;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #819782;
+}
+
+/* Background Color Behind Taped Paper Sections */
+body {
+  background-color: #FAEBD7;
+  color: #4a3323;
+  font-family: 'KCCS', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Section */
+.main-section {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Main Title in Website */
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 0 #d1bfa7;
+  font-weight: bold;
+}
+
+/* Description Under Title */
+.subheading {
+  font-size: 2rem;
+  font-style: italic;
+  color: #4a3323;
+}
+
+/* Header for Each Section */
+h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+/* Bullet Point Style (None) */
+ul
+{
+  list-style-type: none;
+}
+
+/* Map */
+/*Note: Not implemented yet*/
+#map {
+  /*width: 100%;*/
+  height: 200px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-style: italic;
+  border: 2px dashed #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #4a3323;
+  color: #fdffff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title-logo {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+  object-fit: contain;
+}
+
+.menu-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  /*padding-top: 20px;*/
+  margin: 0 auto;
+  /*border-radius: 8px;*/
+  object-fit: cover;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  object-fit: cover;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+@media (max-width: 350px) {
+  .title-logo,
+  .menu-image,
+  .about-image {
+    max-width: 80%;
+  }
+}
+
