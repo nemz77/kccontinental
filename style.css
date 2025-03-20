@@ -2,9 +2,9 @@
 /*Note: This font does not contain the Euro or Pence currency symbols*/
 @font-face {
   font-family: 'KCCS';
-  src: url('../fonts/KCCS.woff2') format('woff2'),
-  url('../fonts/KCCS.woff') format('woff'),
-  url('../fonts/KCCS.ttf') format('truetype');
+  src: url('./fonts/KCCS.woff2') format('woff2'),
+       url('./fonts/KCCS.woff') format('woff'),
+       url('./fonts/KCCS.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
