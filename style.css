@@ -9,51 +9,22 @@
   font-style: normal;
 }
 
-/* Background Style for All Sections */
-/*the containers themselves*/
-.image-container {
-  position: relative;
-  width: 100%;
-  max-width: 900px; /*arbitrary number for now*/
-  margin: 20px auto;
-  border-radius: 12px;
+/* Background Color Behind Everything */
+body {
+  background-color: #FAEBD7;
+  color: #4a3323;
+  font-family: 'KCCS', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/*looks like a taped piece of paper behind every section*/
-.image-container img {
-  display: block; /*figure out if block or flex*/
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  /*filter: drop-shadow(1px 8px 3px rgba(0, 0, 0, 0.2));*/
-}
-
-/* Text On Top of Backgrounds */
-/*https://www.geeksforgeeks.org/how-to-place-text-on-image-using-html-and-css/*/
-.overlay-text {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /*background-color: #fbfdf*/
-  background-color: rgba(251,253,253,0.3); /*transparent text box just in case taped sections don't show up*/
-  padding: 10px;
-  font-size: clamp(1rem, 2vw, 1.5rem); /*viewport width*/
-  text-align: center;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-/* Unfixed Header for Hours*/
-.unfixed-header {
+/* Header on top of Page for Hours */
+.header {
   background-color: #4a3323;
   color: #fdffff;
+  font-size: 1.2rem;
   text-align: center;
   padding: 10px;
-  font-size: 1.2rem;
 }
 
 /* Navigation Bar */
@@ -61,15 +32,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FAEBD7;
   padding: 10px 20px;
 }
 
-/*Either Image Logo or Text Logo*/
-.logo {
+/* Logo in Nav Bar */
+.nav-logo {
   height: 50px;
 }
 
+/* Nav Links */
+/*Note: This just directs to different sections of the same page for now*/
 .nav-links {
   list-style: none;
   display: flex;
@@ -93,36 +65,226 @@
   color: #819782;
 }
 
-/* Background Color Behind Taped Paper Sections */
-body {
-  background-color: #FAEBD7;
-  color: #4a3323;
-  font-family: 'KCCS', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Main Section */
+/* Main Section (Title, Subheading, Logo, Background Image) */
 .main-section {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+/* Background Image Wrapper */
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/KCCS_Drink_Background.webp') center/contain repeat;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+/* Main Text & Logo Wrapper*/
+/*This is primarily to center the content*/
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Main Title and Subheading Container */
+.title-container {
+  flex: 1;
+  text-align: left;
+}
+
+/* Main Logo */
+.title-logo {
+  max-width: 350px;
+  display: block;
+  object-fit: contain;
+  margin: 10px auto;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
+  transform: rotate(-5deg);
+  /*box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);*/
+  transition: transform 0.3s ease-in-out;
+}
+
+.title-logo:hover{
+  transform: rotate(3deg);
+}
+
+/* Sticky Note Containers */
+/*Referenced sticky note code from:*/
+/*https://geeksretreat.wordpress.com/2013/09/04/css3-cork-board-with-sticky-notes/*/
+#about-container, #contact-container, #menu-container {
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Sticky Notes */
+.note {
+  width: 350px;
+  min-height: 350px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0,0,0,0.25);
+  background-color: #FFFACD;
+  position: relative;
   text-align: center;
-  margin: 10px 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-size: cover;
+  /*background-blend-mode: multiply;*/
+  align-self: flex-start; /* Each note's height is independent of the other */
 }
 
-/* Main Title in Website */
+/* If there's an Image instead of a Sticky Note */
+.image-note {
+  width: 350px;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+  /*box-shadow: 5px 5px 10px rgba(0,0,0,0.3);*/
+  border-radius: 8px;
+}
+
+.full-note-image {
+  width: 100%;
+  /*min-height: 550px;*/
+  max-width: 550px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.note:hover, .image-note:hover{
+  transform: rotate(3deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sticky Note Variations with Different Textures / Rotations */
+.sticky1 {
+  background: url('images/Note_Background1.webp') no-repeat center;
+  background-size: cover;
+  transform: rotate(-3deg);
+}
+
+.sticky2 {
+  background: url('images/Note_Background2.webp') no-repeat center;
+  background-size: cover;
+  transform: rotate(2deg);
+  /*background-color: #FFFACD*/
+}
+
+.sticky3 {
+  background: url('images/Note_Background1.webp') no-repeat center;
+  background-size: cover;
+  transform: rotate(-1deg);
+}
+
+.sticky4 {
+  background: url('images/Note_Background2.webp') no-repeat center;
+  background-size: cover;
+  transform: rotate(4deg);
+}
+
+/* Tape on top of Sticky Notes */
+.tape {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sticky1 .tape, .sticky3 .tape {
+  content: url('images/Note_Tape1.webp');
+}
+
+.sticky2 .tape, .sticky4 .tape {
+  content: url('images/Note_Tape2.webp');
+}
+
+/* Images Inside Notes */
+.embedded-image {
+  width: 90%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.embedded-image1 {
+  width: 90%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+/* Headers for Each Section */
 h1 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 0 #d1bfa7;
+  font-size: 4rem;
+  /*text-shadow: 2px 2px 0 #d1bfa7;*/
   font-weight: bold;
+  text-shadow:
+    3px 3px 2px #ffefd7,
+    -3px 3px 2px #ffefd7,
+    -3px -3px 0 #ffefd7,
+    3px -3px 0 #ffefd7;
 }
 
-/* Description Under Title */
 .subheading {
   font-size: 2rem;
   font-style: italic;
   color: #4a3323;
+  position: relative;
 }
 
-/* Header for Each Section */
+/* Circle behind the subheader word "spot" */
+.highlight-dot {
+  position: relative;
+  z-index: 1;
+  padding: 2px 6px;
+  color: #fdffff;
+}
+
+.highlight-dot::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.3em;
+  height: 2.3em;
+  background-color: #ec0431;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
 h2 {
   font-size: 2rem;
   margin-top: 10px;
@@ -147,60 +309,132 @@ ul
 /* Map */
 /*Note: Not implemented yet*/
 #map {
-  /*width: 100%;*/
-  height: 200px;
-  background-color: #e0e0e0;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #777;
   font-style: italic;
-  border: 2px dashed #ccc;
 }
 
-/* Footer */
+/* Footer Style */
 footer {
   background-color: #4a3323;
   color: #fdffff;
-  padding: 20px;
+  /*padding: 20px;*/
+  padding: 30px 10%;
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.title-logo {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  margin: 10px auto;
-  display: block;
-  object-fit: contain;
-}
-
-.menu-image {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  /*padding-top: 20px;*/
+/* Container for Footer Logo and Text */
+.footer-container {
+  display: flex;
+  justify-content: start;
+  /*align-items: flex-start;*/
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
-  /*border-radius: 8px;*/
-  object-fit: cover;
+  padding: 0 5%;
 }
 
-.about-image {
-  width: 100%;
-  max-width: 500px;
+/* Footer Logo */
+.footer-logo {
+  max-width: 250px;
   height: auto;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  object-fit: cover;
-  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
+  margin-right: 40px;
+  flex-shrink: 0;
+  filter: invert(1);
 }
 
+/* Footer text: Heading, Paragraph, Bold */
+.footer-text {
+  text-align: left;
+}
+
+.footer-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-text p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.footer-text strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 15px;
+}
+
+.header, footer {
+  width: 100vw; /* Trying to make sure the content of webpage doesn't overflow header and footer */
+  margin: 0;
+  padding: 10px 0;
+}
+
+html, body {
+  overflow-x: hidden; /* Trying to make sure the content of webpage doesn't overflow header and footer */
+  width: 100%;
+}
+
+/*Note: max width numbers are currently arbitrary, need to figure them out*/
 @media (max-width: 350px) {
-  .title-logo,
-  .menu-image,
-  .about-image {
+  .title-logo {
     max-width: 80%;
   }
 }
 
+@media (max-width: 600px) {
+  .note {
+    width: 200px;
+  }
+  .embedded-image, .embedded-image1 {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .nav-logo {
+    margin-bottom: 10px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title-logo {
+    transform: rotate(-3deg);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 5%;
+  }
+
+  .footer-logo {
+    max-width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    max-width: 80%;
+    text-align: center;
+  }
+}

@@ -29,64 +29,108 @@
 
 <body>
 
-<!-- Unfixed Header for Hours -->
-<div class="unfixed-header">
+<!-- Header for Hours -->
+<div class="header">
   OPEN EVERY DAY FROM 7am – 5pm
 </div>
 
 <!-- Navigation Bar -->
 <nav class="nav-bar">
-  <img src="images/KCCS_LOGO_ALT.webp" alt="KCCS Logo" class="logo">
+  <img src="images/KCCS_LOGO_ALT.webp" alt="KCCS Logo" class="nav-logo">
   <ul class="nav-links">
     <li><a href="#home">HOME</a></li>
     <li><a href="#about">ABOUT</a></li>
-    <li><a href="#menu">MENU</a></li>
     <li><a href="#contact">CONTACT</a></li>
+    <li><a href="#menu">MENU</a></li>
   </ul>
 </nav>
 
 <!-- KCCS Title and Subheading -->
 <section id="home" class="main-section">
-  <h1>KC CONTINENTAL STORES</h1>
-  <img src="images/KCCS_LOGO.webp" alt="KCCS Logo" class="title-logo">
-  <p class="subheading">For a spot of whimsy on Cali Road.</p>
+  <div class="content-wrapper">
+    <div class="title-container">
+      <h1>KC CONTINENTAL STORES</h1>
+<!--      <p class="subheading">For a spot of whimsy on Cali Road.</p>-->
+      <p class="subheading">For a <span class="highlight-dot">spot</span> of whimsy on Cali Road.</p>
+    </div>
+    <img src="images/KCCS_LOGO.webp" alt="KCCS Logo" class="title-logo">
+  </div>
 </section>
 
 
 <!-- About Section -->
-<section id="about" class="image-container">
-  <img src="images/KCCS_Background2.webp" alt="KCCS Background">
-  <div class="overlay-text">
+<div id="about-container">
+
+  <div section id="about" class="note sticky1">
+    <div class="tape"></div>
     <h2>ABOUT US</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-    <img src="images/KCCS_Puzzle.webp" alt="About Image" class="about-image">
-  </div>
-</section>
-
-<!-- Location and Map -->
-<section id="contact"  class="image-container">
-  <img src="images/KCCS_Background1.webp" alt="KCCS Background">
-  <div class="overlay-text">
-    <h2>WHERE TO FIND US</h2>
+    <img src="images/KCCS_Drinks.webp" alt="About Image" class="embedded-image">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-    <p><strong>ADDRESS:</strong> 26 Caledonian Rd, London N1 9DT, UK</p>
-    <p><strong>PHONE:</strong> +441234567890</p>
-    <p><strong>HOURS:</strong> 7am – 5pm every day</p>
-    <div id="map">
-      MAP GOES HERE
+    <img src="images/KCCS_Naaz.webp" alt="About Image" class="embedded-image">
+  </div>
+
+  <div class="image-note">
+    <img src="images/KCCS_Puzzle.webp" alt="About Image" class="full-note-image">
+  </div>
+
+  <div class="note sticky2">
+    <div class="tape"></div>
+    <h2>A SPOT OF WHIMSY...</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+    <img src="images/KCCS_Drinkin.webp" alt="About Image" class="embedded-image">
+  </div>
+
+</div>
+
+<!-- Contact & Map Section -->
+<div id="contact-container">
+
+  <div section id="contact" class="note sticky3">
+    <div class="tape"></div>
+    <h2>COME VISIT US!</h2>
+    <p>26 Caledonian Rd, London N1 9DT, UK</p>
+    <h2>STORE HOURS</h2>
+    <p>Hours: 7am – 5pm every day</p>
+    <img src="images/KCCS_Wine_Time.webp" alt="Contact Image" class="embedded-image1">
+  </div>
+
+  <div class="image-note">
+    <img src="images/Note_Tape1.webp" alt="Tape" class="tape">
+    <div class="map">
+      <img src="images/KCCS_Map.webp" alt="KCCS Map" class="full-note-image">
+      PLACEHOLDER MAP (SCREENSHOT)
     </div>
   </div>
-</section>
 
-<!-- Menu -->
+  <div class="note sticky1">
+    <div class="tape"></div>
+    <h2>CONTACT US</h2>
+    <p>Phone: +441234567890</p>
+    <img src="images/KCCS_Best_Wine.webp" alt="Contact Image" class="embedded-image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+  </div>
+
+</div>
+
+<!-- Menu Section -->
 <!--These prices are placeholders, just to see how the numbers look-->
-<section id="menu" class="image-container">
-  <img src="images/KCCS_Background3.webp" alt="KCCS Background">
-  <div class="overlay-text">
+<div id="menu-container">
+
+  <div section id="menu" class="note sticky2">
+    <div class="tape"></div>
     <h2>VIEW OUR MENU</h2>
-    <img src="images/KCCS_Menu.webp" alt="Menu Image" class="menu-image">
+    <img src="images/KCCS_Menu_Man.webp" alt="Menu Image" class="embedded-image1">
+    <p>Hot Beverages, Cocktails, and Bites!</p>
+    <h3>TAKE NOTE!</h3>
+    <p>(Sticky note height is adjustable, based on the amount of content written within the note.)</p>
+  </div>
+
+  <div class="note sticky1">
+    <div class="tape"></div>
     <div class="category">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+      <img src="images/KCCS_Coffee.webp" alt="Menu Image" class="embedded-image">
       <h3>HOT BEVERAGES</h3>
       <ul>
         <li>Americano – $1.50</li>
@@ -96,7 +140,12 @@
         <li>Artisanal Teas – $4.00</li>
       </ul>
     </div>
+  </div>
+
+  <div class="note sticky3">
+    <div class="tape"></div>
     <div class="category">
+      <img src="images/KCCS_Cocktails.webp" alt="Menu Image" class="embedded-image">
       <h3>COCKTAILS</h3>
       <ul>
         <li>Midori Sour – $7.00</li>
@@ -104,6 +153,7 @@
         <li>Limoncello – $5.00</li>
         <li>White Russian – $9.00</li>
       </ul>
+      <img src="images/KCCS_Menu.webp" alt="Menu Image" class="embedded-image">
     </div>
     <div class="category">
       <h3>BITES</h3>
@@ -113,14 +163,22 @@
       </ul>
     </div>
   </div>
-</section>
+
+</div>
 
 <!-- Footer for Logo, Hours & Location -->
 <footer>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-  <p><strong>ADDRESS:</strong> 26 Caledonian Rd, London N1 9DT, UK</p>
-  <p><strong>PHONE:</strong> +441234567890</p>
-  <p><strong>HOURS:</strong> 7am – 5pm every day</p>
+  <div class="footer-container">
+    <img src="images/KCCS_LOGO_ALT.webp" alt="KCCS Logo" class="footer-logo">
+    <div class="footer-text">
+      <h3>LOCATION & HOURS</h3>
+      <strong>VISIT US</strong>
+      <p>26 CALEDONIAN RD, LONDON N1 9DT, UK</p>
+      <p>+441234567890</p>
+      <strong>STORE HOURS</strong>
+      <p>7AM – 5PM EVERY DAY</p>
+    </div>
+  </div>
 </footer>
 
 <!--<script src="js/script.js"></script>-->
