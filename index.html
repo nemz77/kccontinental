@@ -17,10 +17,9 @@
   <!--  <meta property="og:image" content="">-->
   <!--  <meta property="og:image:alt" content="">-->
 
-  <!--  <link rel="icon" href="/favicon.ico" sizes="any">-->
-  <link rel="icon" href="images/KCCS_LOGO_ALT.webp" sizes="any">
+  <link rel="icon" href="images/KCCS_favicon.webp" sizes="any">
   <!--  <link rel="icon" href="/icon.svg" type="image/svg+xml">-->
-  <link rel="apple-touch-icon" href="images/KCCS_LOGO_ALT.webp">
+  <link rel="apple-touch-icon" href="images/KCCS_favicon.webp">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
@@ -35,15 +34,21 @@
 </div>
 
 <!-- Navigation Bar -->
-<nav class="nav-bar">
-  <img src="images/KCCS_LOGO_ALT.webp" alt="KCCS Logo" class="nav-logo">
-  <ul class="nav-links">
-    <li><a href="#home">HOME</a></li>
-    <li><a href="#about">ABOUT</a></li>
-    <li><a href="#contact">CONTACT</a></li>
-    <li><a href="#menu">MENU</a></li>
-  </ul>
-</nav>
+<!--Referenced mobile navigation bar code from:-->
+<!--https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
+<div class="nav-bar">
+    <img src="images/KCCS_LOGO_ALT.webp" alt="KCCS Logo" class="nav-logo">
+  <div id="nav-links">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#menu">MENU</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+    <img src="images/KCCS_navmenu.webp" alt="Hamburger Menu Icon" id="menu-icon">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 <!-- KCCS Title and Subheading -->
 <section id="home" class="main-section">
@@ -90,17 +95,24 @@
     <div class="tape"></div>
     <h2>COME VISIT US!</h2>
     <p>26 Caledonian Rd, London N1 9DT, UK</p>
+    <h2>TAKE NOTE!</h2>
+    <p>(Map is a placeholder screenshot.)</p>
     <h2>STORE HOURS</h2>
     <p>Hours: 7am – 5pm every day</p>
     <img src="images/KCCS_Wine_Time.webp" alt="Contact Image" class="embedded-image1">
   </div>
 
+<!--  <div class="image-note">-->
+<!--    <img src="images/Note_Tape1.webp" alt="Tape" class="tape">-->
+<!--    <div class="map">-->
+<!--      <img src="images/KCCS_Map.webp" alt="KCCS Map" class="full-note-image">-->
+<!--      <p>PLACEHOLDER (SCREENSHOT)</p>-->
+<!--    </div>-->
+<!--  </div>-->
+
   <div class="image-note">
-    <img src="images/Note_Tape1.webp" alt="Tape" class="tape">
-    <div class="map">
+    <img src="images/Note_Tape2.webp" alt="Tape" class="tape">
       <img src="images/KCCS_Map.webp" alt="KCCS Map" class="full-note-image">
-      PLACEHOLDER MAP (SCREENSHOT)
-    </div>
   </div>
 
   <div class="note sticky1">
@@ -114,7 +126,6 @@
 </div>
 
 <!-- Menu Section -->
-<!--These prices are placeholders, just to see how the numbers look-->
 <div id="menu-container">
 
   <div section id="menu" class="note sticky2">
@@ -130,6 +141,8 @@
     <div class="tape"></div>
     <div class="category">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+      <h3>TAKE NOTE!</h3>
+      <p>(These prices are placeholders, just to see how the numbers look.)</p>
       <img src="images/KCCS_Coffee.webp" alt="Menu Image" class="embedded-image">
       <h3>HOT BEVERAGES</h3>
       <ul>
@@ -181,7 +194,7 @@
   </div>
 </footer>
 
-<!--<script src="js/script.js"></script>-->
+<script src="script.js"></script>
 
 </body>
 

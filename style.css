@@ -29,40 +29,57 @@ body {
 
 /* Navigation Bar */
 .nav-bar {
-  display: flex;
+  /*display: flex;*/
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+  /*align-items: center;*/
+  /*padding: 10px 5%;*/
+  padding: 1em;
+  overflow: hidden;
+  background-color: #FAEBD7;
+  position: relative;
 }
 
 /* Logo in Nav Bar */
 .nav-logo {
-  height: 50px;
+  width: 120px;
+  height: auto;
 }
 
 /* Nav Links */
 /*Note: This just directs to different sections of the same page for now*/
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  padding: 0;
-  margin: 0;
+.nav-bar #nav-links {
+  display: none;
 }
 
-.nav-links li {
-  display: inline;
-}
-
-.nav-links a {
+.nav-bar a {
   text-decoration: none;
   color: #8C1F25;
   font-size: 1.5rem;
   transition: color 0.3s;
+  /*padding: 14px 16px;*/
+  display: block;
+  /*align-items: center;*/
 }
 
-.nav-links a:hover {
-  color: #819782;
+/* Mobile Dropdown Menu */
+.nav-bar a.icon {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+/* Hamburger Icon */
+#menu-icon {
+  width: 35px;
+  height: auto;
+}
+
+.nav-bar a:hover {
+  color: #4e7478;
 }
 
 /* Main Section (Title, Subheading, Logo, Background Image) */
@@ -104,7 +121,8 @@ body {
 /* Main Title and Subheading Container */
 .title-container {
   flex: 1;
-  text-align: left;
+  /*text-align: left;*/
+  text-align: center;
 }
 
 /* Main Logo */
@@ -132,7 +150,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px;
+  /*  padding: 40px;*/
+  padding: 5% 0;
   gap: 50px;
   align-items: flex-start;
 }
@@ -177,8 +196,10 @@ body {
   /*min-height: 550px;*/
   max-width: 550px;
   height: auto;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
   object-fit: cover;
+  align-items: center;
+  flex-direction: column;
 }
 
 .note:hover, .image-note:hover{
@@ -250,11 +271,11 @@ h1 {
   font-size: 4rem;
   /*text-shadow: 2px 2px 0 #d1bfa7;*/
   font-weight: bold;
-  text-shadow:
-    3px 3px 2px #ffefd7,
-    -3px 3px 2px #ffefd7,
-    -3px -3px 0 #ffefd7,
-    3px -3px 0 #ffefd7;
+  /*text-shadow:*/
+    /*3px 3px 2px #ffefd7,*/
+    /*-3px 3px 2px #ffefd7,*/
+    /*-3px -3px 0 #ffefd7,*/
+    /*3px -3px 0 #ffefd7;*/
 }
 
 .subheading {
@@ -308,13 +329,13 @@ ul
 
 /* Map */
 /*Note: Not implemented yet*/
-#map {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #777;
-  font-style: italic;
-}
+/*#map {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  color: #777;*/
+/*  font-style: italic;*/
+/*}*/
 
 /* Footer Style */
 footer {
@@ -381,47 +402,83 @@ html, body {
   width: 100%;
 }
 
-/*Note: max width numbers are currently arbitrary, need to figure them out*/
-@media (max-width: 350px) {
-  .title-logo {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 600px) {
-  .note {
-    width: 200px;
-  }
-  .embedded-image, .embedded-image1 {
-    max-width: 120px;
-  }
-}
-
+/*Note: max width numbers are currently approximations based on Chrome Dev Tools*/
+/* Responsive Design for Header Stuff */
 @media (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .nav-logo {
-    margin-bottom: 10px;
-  }
-
   .content-wrapper {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 10px;
+    gap: 0;
   }
 
   .title-logo {
+    max-width: 60%;
+    height: auto;
     transform: rotate(-3deg);
   }
+}
 
+/* Responsive Design for Nav Bar */
+@media (max-width: 600px) {
+  .nav-logo,
+  .menu-icon {
+    max-width: 80%;
+  }
+
+  .nav-bar{
+    padding: 0.3em;
+  }
+
+  .nav-bar #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    /*align-items: center;*/
+    /*margin-top: 10px;*/
+    align-items: center;
+  }
+
+  .nav-bar a.icon {
+    display: block;
+  }
+
+  .nav-bar #nav-links.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar #nav-links a {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Hide hamburger icon and show nav links */
+@media (min-width: 601px) {
+  .nav-bar {
+    display: flex;
+  }
+
+  .nav-bar #nav-links {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-bar a.icon {
+    display: none;
+  }
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -431,10 +488,83 @@ html, body {
   .footer-logo {
     max-width: 50%;
     margin-bottom: 10px;
+    margin-right: 0;
   }
 
   .footer-text {
     max-width: 80%;
     text-align: center;
+  }
+}
+
+/* Responsive Design for Sticky Notes */
+@media (max-width: 600px) {
+  .tape {
+    width: 130px;
+    top: -10px;
+  }
+
+  .note {
+    width: 200px;
+    min-height: 200px;
+    transform: none;
+    font-size: 1rem;
+    margin: 10px auto;
+    gap: 0;
+    padding: 0 8%;
+  }
+
+  .full-note-image,
+  .embedded-image,
+  .embedded-image1 {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .embedded-image,
+  .embedded-image1{
+    padding: 5% 0;
+  }
+
+  .full-note-image
+  {
+    gap: 0;
+  }
+}
+
+/* Responsive Design for Font Sizes */
+@media (max-width: 600px) {
+  .title-container {
+    padding: 0 5%;
+  }
+
+  .highlight-dot::before {
+    width: 2.2em;
+    height: 2.2em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    padding: 10px 0 0 0;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  li {
+    font-size: 0.9rem;
   }
 }
