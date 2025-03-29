@@ -1,3 +1,139 @@
+/*PLACEHOLDER CONTENT START*/
+
+/* Themes */
+/*Note: This is all a placeholder and will not be in the final webpage*/
+/*as I can't tell which theme to pick*/
+:root {
+  --body-color: #FAEBD7;
+  --main-container-bg: url('images/KCCS_Background_Cream.webp') center/contain repeat;
+  --header-footer-color: #4a3323;
+  --header-footer-text: #fdffff;
+  --main-header-color: #4a3323;
+  --main-header-shadow: #FAEBD7;
+  --subheading-color: #952e30;
+  --heading-color: #952e30;
+  --note-container-bg: url('images/KCCS_Design_Cream.webp') center/350px repeat;
+  --note-color: #fcfeff;
+  --first-tape: url('images/Note_Tape_Red.webp');
+  --second-tape: url('images/Note_Tape_Green.webp');
+  --third-tape: url('images/Note_Tape_Orange.webp');
+  --fourth-tape: url('images/Note_Tape_Green.webp');
+  --text-color: #4a3323;
+  --nav-link-color: #8C1F25;
+  --nav-hover-color: #4e7478;
+  --nav-bar-color: #f7e1bf;
+}
+
+.theme-eggshell {
+  --body-color: #f9f6e6;
+  --main-container-bg: url('images/KCCS_Background_Eggshell.webp') center/contain repeat;
+  --note-container-bg: url('images/KCCS_Design_Eggshell.webp') center/350px repeat;
+  --nav-bar-color: #f5f0da;
+}
+
+.theme-minimal {
+  --main-container-bg: url('images/KCCS_Background_Minimal.webp') center/contain repeat;
+  --nav-bar-color: #faebd7;
+}
+
+.theme-peach {
+  --body-color: #f0c986;
+  --main-container-bg: url('images/KCCS_Background_Peach.webp') center/contain repeat;
+  --main-header-shadow: #f9f6e6;
+  --subheading-color: #4a3323;
+  --note-container-bg: url('images/KCCS_Design_Peach.webp') center/350px repeat;
+  --note-color: #f6ead4;
+  --first-tape: url('images/Note_Tape_Green.webp');
+  --second-tape: url('images/Note_Tape_Orange.webp');
+  --third-tape: url('images/Note_Tape_Red.webp');
+  --fourth-tape: url('images/Note_Tape_Green.webp');
+  --nav-hover-color: #c9643a;
+  --nav-bar-color: #f2d39e;
+}
+
+.theme-green {
+  --body-color: #aabba9;
+  --main-container-bg: url('images/KCCS_Background_Green.webp') center/contain repeat;
+  --header-footer-text: #f9f6e6;
+  --main-header-color: #FAEBD7;
+  --main-header-shadow: #4a3323;
+  --subheading-color: #f9f6e6;
+  --heading-color: #577478;
+  --note-container-bg: url('images/KCCS_Design_Green.webp') center/350px repeat;
+  --note-color: #FAEBD7;
+  --first-tape: url('images/Note_Tape_Red.webp');
+  --second-tape: url('images/Note_Tape_Green.webp');
+  --third-tape: url('images/Note_Tape_Orange.webp');
+  --fourth-tape: url('images/Note_Tape_Yellow.webp');
+  --nav-link-color: #4a3223;
+  --nav-hover-color: #f5f0da;
+  --nav-bar-color: #91a69a;
+}
+
+.theme-burgundy {
+  --body-color: #d28463;
+  --main-container-bg: url('images/KCCS_Background_Burgundy.webp') center/contain repeat;
+  --header-footer-color: #4a3323;
+  --header-footer-text: #f9f6e6;
+  --main-header-color: #fcfeff;
+  --main-header-shadow: #4a3323;
+  --subheading-color: #fcfeff;
+  --heading-color: #952e30;
+  --note-container-bg: url('images/KCCS_Design_Burgundy.webp') center/350px repeat;
+  --note-color: #FAEBD7;
+  --first-tape: url('images/Note_Tape_Red.webp');
+  --second-tape: url('images/Note_Tape_Green.webp');
+  --third-tape: url('images/Note_Tape_Yellow.webp');
+  --fourth-tape: url('images/Note_Tape_Green.webp');
+  --nav-link-color: #ffffff;
+  --nav-hover-color: #f5f0da;
+  --nav-bar-color: #dda385;
+}
+
+.theme-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--header-footer-color);
+}
+
+.theme-button {
+  padding: 8px 16px;
+  border: 2px solid var(--header-footer-color);
+  background-color: white;
+  color: var(--header-footer-color);
+  font-family: 'KCCS', sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.theme-button.active {
+  background-color: var(--header-footer-color);
+  color: white;
+}
+
+/* Responsive Design for Theme Switcher Buttons */
+@media (max-width: 600px) {
+  .theme-switcher {
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    gap: 8px;
+  }
+
+  .theme-button {
+    width: 50%;
+    padding: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* PLACEHOLDER CONTENT END */
+
 /* Custom Typeface (KCCS) */
 /*Note: This font does not contain the Euro or Pence currency symbols*/
 @font-face {
@@ -9,10 +145,45 @@
   font-style: normal;
 }
 
+/* Loading Animation */
+@keyframes fade {
+  0% {
+    transform: translateY(var(--offset, 0));
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.title-container,
+.title-logo,
+.nav-logo,
+.nav-bar #nav-links {
+  opacity: 0;
+  animation: 0.5s fade ease-out forwards;
+}
+
+.title-container,
+.title-logo {
+  --offset: 5%;
+}
+
+.nav-logo,
+.nav-bar #nav-links {
+  --offset: -5%;
+}
+
+/* Staggering */
+.nav-bar #nav-links, .nav-logo { animation-delay: 0.2s; }
+.title-container { animation-delay: 0.6s; }
+.title-logo { animation-delay: 0.8s; }
+
 /* Background Color Behind Everything */
 body {
-  background-color: #FAEBD7;
-  color: #4a3323;
+  background-color: var(--body-color);
+  color: var(--text-color);
   font-family: 'KCCS', sans-serif;
   margin: 0;
   padding: 0;
@@ -20,8 +191,8 @@ body {
 
 /* Header on top of Page for Hours */
 .header {
-  background-color: #4a3323;
-  color: #fdffff;
+  background-color: var(--header-footer-color);
+  color: var(--header-footer-text);
   font-size: 1.2rem;
   text-align: center;
   padding: 10px;
@@ -29,13 +200,10 @@ body {
 
 /* Navigation Bar */
 .nav-bar {
-  /*display: flex;*/
   justify-content: space-between;
-  /*align-items: center;*/
-  /*padding: 10px 5%;*/
   padding: 1em;
   overflow: hidden;
-  background-color: #FAEBD7;
+  background-color: var(--nav-bar-color);
   position: relative;
 }
 
@@ -51,14 +219,13 @@ body {
   display: none;
 }
 
+/*.nav-bar a {*/
 .nav-bar a {
   text-decoration: none;
-  color: #8C1F25;
+  color: var(--nav-link-color);
   font-size: 1.5rem;
   transition: color 0.3s;
-  /*padding: 14px 16px;*/
   display: block;
-  /*align-items: center;*/
 }
 
 /* Mobile Dropdown Menu */
@@ -79,7 +246,7 @@ body {
 }
 
 .nav-bar a:hover {
-  color: #4e7478;
+  color: var(--nav-hover-color);
 }
 
 /* Main Section (Title, Subheading, Logo, Background Image) */
@@ -98,7 +265,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/KCCS_Drink_Background.webp') center/contain repeat;
+  background: var(--main-container-bg);
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
   opacity: 0.3;
   z-index: -2;
@@ -141,6 +308,26 @@ body {
   transform: rotate(3deg);
 }
 
+/* Wrapping sticky notes inside background container */
+#sticky-notes-container {
+  position: relative;
+  padding: 20px;
+}
+
+#sticky-notes-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--note-container-bg);
+  opacity: 0.3;
+  mask-image: linear-gradient(to bottom, transparent 0%,
+  rgba(0, 0, 0, 1.0) 20%, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
+  z-index: -1;
+}
+
 /* Sticky Note Containers */
 /*Referenced sticky note code from:*/
 /*https://geeksretreat.wordpress.com/2013/09/04/css3-cork-board-with-sticky-notes/*/
@@ -153,7 +340,8 @@ body {
   /*  padding: 40px;*/
   padding: 5% 0;
   gap: 50px;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
+  align-items: center;
 }
 
 /* Sticky Notes */
@@ -162,8 +350,8 @@ body {
   min-height: 350px;
   padding: 20px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-  border: 1px solid rgba(0,0,0,0.25);
-  background-color: #FFFACD;
+  border: 1px solid rgba(0,0,0,0.3);
+  background-color: var(--note-color);
   position: relative;
   text-align: center;
   font-size: 1.5rem;
@@ -174,12 +362,11 @@ body {
   justify-content: space-between;
   border-radius: 8px;
   background-size: cover;
-  /*background-blend-mode: multiply;*/
-  align-self: flex-start; /* Each note's height is independent of the other */
+  align-self: center;
 }
 
 /* If there's an Image instead of a Sticky Note */
-.image-note {
+.image-note, .image-note-map {
   width: 350px;
   height: auto;
   position: relative;
@@ -202,35 +389,55 @@ body {
   flex-direction: column;
 }
 
-.note:hover, .image-note:hover{
+.image-note-map {
+  cursor: pointer;
+}
+
+/* When clicked, the map zooms in */
+.image-note-map.enlarged {
+  transition: transform 0.25s ease;
+  max-width: 100%;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  object-fit: contain;
+  z-index: 10;
+}
+
+.note:hover, .image-note:hover {
   transform: rotate(3deg);
   transition: transform 0.3s ease-in-out;
 }
 
 /* Sticky Note Variations with Different Textures / Rotations */
 .sticky1 {
-  background: url('images/Note_Background1.webp') no-repeat center;
+  background: url('images/Note_Background1.webp') no-repeat center, var(--note-color);;
   background-size: cover;
   transform: rotate(-3deg);
+  background-blend-mode: multiply;
 }
 
 .sticky2 {
-  background: url('images/Note_Background2.webp') no-repeat center;
+  background: url('images/Note_Background2.webp') no-repeat center, var(--note-color);;
   background-size: cover;
   transform: rotate(2deg);
-  /*background-color: #FFFACD*/
+  background-blend-mode: multiply;
 }
 
 .sticky3 {
-  background: url('images/Note_Background1.webp') no-repeat center;
+  background: url('images/Note_Background1.webp') no-repeat center, var(--note-color);;
   background-size: cover;
   transform: rotate(-1deg);
+  background-blend-mode: multiply;
 }
 
 .sticky4 {
-  background: url('images/Note_Background2.webp') no-repeat center;
+  background: url('images/Note_Background2.webp') no-repeat center, var(--note-color);;
   background-size: cover;
   transform: rotate(4deg);
+  background-blend-mode: multiply;
 }
 
 /* Tape on top of Sticky Notes */
@@ -243,12 +450,20 @@ body {
   transform: translateX(-50%);
 }
 
-.sticky1 .tape, .sticky3 .tape {
-  content: url('images/Note_Tape1.webp');
+.sticky1 .tape {
+  content: var(--first-tape);
 }
 
-.sticky2 .tape, .sticky4 .tape {
-  content: url('images/Note_Tape2.webp');
+.sticky2 .tape {
+  content: var(--second-tape);
+}
+
+.sticky3 .tape {
+  content: var(--third-tape);
+}
+
+.sticky4 .tape {
+  content: var(--fourth-tape);
 }
 
 /* Images Inside Notes */
@@ -269,19 +484,16 @@ body {
 /* Headers for Each Section */
 h1 {
   font-size: 4rem;
-  /*text-shadow: 2px 2px 0 #d1bfa7;*/
   font-weight: bold;
-  /*text-shadow:*/
-    /*3px 3px 2px #ffefd7,*/
-    /*-3px 3px 2px #ffefd7,*/
-    /*-3px -3px 0 #ffefd7,*/
-    /*3px -3px 0 #ffefd7;*/
+  /*text-shadow: 4px 1px 1px #FAEBD7;*/
+  text-shadow: 4px 1px 1px var(--main-header-shadow);
+  color: var(--main-header-color) ;
 }
 
 .subheading {
   font-size: 2rem;
   font-style: italic;
-  color: #4a3323;
+  color: var(--subheading-color);
   position: relative;
 }
 
@@ -307,6 +519,7 @@ h1 {
 }
 
 h2 {
+  color: var(--heading-color);
   font-size: 2rem;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -315,6 +528,7 @@ h2 {
 }
 
 h3 {
+  color: var(--heading-color);
   font-size: 1.5rem;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -339,8 +553,8 @@ ul
 
 /* Footer Style */
 footer {
-  background-color: #4a3323;
-  color: #fdffff;
+  background-color: var(--header-footer-color);
+  color: var(--header-footer-text);
   /*padding: 20px;*/
   padding: 30px 10%;
   text-align: center;
@@ -529,6 +743,13 @@ html, body {
   .full-note-image
   {
     gap: 0;
+  }
+}
+
+@media (max-width: 705px) {
+  .image-note-map.enlarged {
+    max-width: 80%;
+    transform: translate(-50%, -50%) scale(1.5);
   }
 }
 

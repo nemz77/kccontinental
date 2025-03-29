@@ -28,6 +28,17 @@
 
 <body>
 
+<!-- Theme Switcher -->
+<!--Note: This will not be on the final webpage, this is because I can't choose a final theme-->
+<div class="theme-switcher">
+  <button id="default-theme" class="theme-button active">CREAM</button>
+  <button id="eggshell-theme" class="theme-button">EGGSHELL</button>
+  <button id="minimal-theme" class="theme-button">MINIMAL</button>
+  <button id="peach-theme" class="theme-button">PEACH</button>
+  <button id="green-theme" class="theme-button">GREEN</button>
+  <button id="burgundy-theme" class="theme-button">BURGUNDY</button>
+</div>
+
 <!-- Header for Hours -->
 <div class="header">
   OPEN EVERY DAY FROM 7am – 5pm
@@ -55,126 +66,122 @@
   <div class="content-wrapper">
     <div class="title-container">
       <h1>KC CONTINENTAL STORES</h1>
-<!--      <p class="subheading">For a spot of whimsy on Cali Road.</p>-->
       <p class="subheading">For a <span class="highlight-dot">spot</span> of whimsy on Cali Road.</p>
     </div>
     <img src="images/KCCS_LOGO.webp" alt="KCCS Logo" class="title-logo">
   </div>
 </section>
 
+<!-- Sticky Note Container -->
+<div id="sticky-notes-container">
 
-<!-- About Section -->
-<div id="about-container">
+  <!-- About Section -->
+  <div id="about-container">
 
-  <div section id="about" class="note sticky1">
-    <div class="tape"></div>
-    <h2>ABOUT US</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-    <img src="images/KCCS_Drinks.webp" alt="About Image" class="embedded-image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-    <img src="images/KCCS_Naaz.webp" alt="About Image" class="embedded-image">
-  </div>
-
-  <div class="image-note">
-    <img src="images/KCCS_Puzzle.webp" alt="About Image" class="full-note-image">
-  </div>
-
-  <div class="note sticky2">
-    <div class="tape"></div>
-    <h2>A SPOT OF WHIMSY...</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-    <img src="images/KCCS_Drinkin.webp" alt="About Image" class="embedded-image">
-  </div>
-
-</div>
-
-<!-- Contact & Map Section -->
-<div id="contact-container">
-
-  <div section id="contact" class="note sticky3">
-    <div class="tape"></div>
-    <h2>COME VISIT US!</h2>
-    <p>26 Caledonian Rd, London N1 9DT, UK</p>
-    <h2>TAKE NOTE!</h2>
-    <p>(Map is a placeholder screenshot.)</p>
-    <h2>STORE HOURS</h2>
-    <p>Hours: 7am – 5pm every day</p>
-    <img src="images/KCCS_Wine_Time.webp" alt="Contact Image" class="embedded-image1">
-  </div>
-
-<!--  <div class="image-note">-->
-<!--    <img src="images/Note_Tape1.webp" alt="Tape" class="tape">-->
-<!--    <div class="map">-->
-<!--      <img src="images/KCCS_Map.webp" alt="KCCS Map" class="full-note-image">-->
-<!--      <p>PLACEHOLDER (SCREENSHOT)</p>-->
-<!--    </div>-->
-<!--  </div>-->
-
-  <div class="image-note">
-    <img src="images/Note_Tape2.webp" alt="Tape" class="tape">
-      <img src="images/KCCS_Map.webp" alt="KCCS Map" class="full-note-image">
-  </div>
-
-  <div class="note sticky1">
-    <div class="tape"></div>
-    <h2>CONTACT US</h2>
-    <p>Phone: +441234567890</p>
-    <img src="images/KCCS_Best_Wine.webp" alt="Contact Image" class="embedded-image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-  </div>
-
-</div>
-
-<!-- Menu Section -->
-<div id="menu-container">
-
-  <div section id="menu" class="note sticky2">
-    <div class="tape"></div>
-    <h2>VIEW OUR MENU</h2>
-    <img src="images/KCCS_Menu_Man.webp" alt="Menu Image" class="embedded-image1">
-    <p>Hot Beverages, Cocktails, and Bites!</p>
-    <h3>TAKE NOTE!</h3>
-    <p>(Sticky note height is adjustable, based on the amount of content written within the note.)</p>
-  </div>
-
-  <div class="note sticky1">
-    <div class="tape"></div>
-    <div class="category">
+    <div section id="about" class="note sticky1">
+      <div class="tape"></div>
+      <h2>ABOUT US</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-      <h3>TAKE NOTE!</h3>
-      <p>(These prices are placeholders, just to see how the numbers look.)</p>
-      <img src="images/KCCS_Coffee.webp" alt="Menu Image" class="embedded-image">
-      <h3>HOT BEVERAGES</h3>
-      <ul>
-        <li>Americano – $1.50</li>
-        <li>Mocha – $3.70</li>
-        <li>Flat White – $3.50</li>
-        <li>Espresso – $2.60</li>
-        <li>Artisanal Teas – $4.00</li>
-      </ul>
+      <img src="images/KCCS_Drinks.webp" alt="About Image" class="embedded-image">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+      <img src="images/KCCS_Naaz.webp" alt="About Image" class="embedded-image">
     </div>
+
+    <div class="image-note">
+      <img src="images/KCCS_Puzzle.webp" alt="About Image" class="full-note-image">
+    </div>
+
+    <div class="note sticky2">
+      <div class="tape"></div>
+      <h2>A SPOT OF WHIMSY...</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+      <img src="images/KCCS_Drinkin.webp" alt="About Image" class="embedded-image">
+    </div>
+
   </div>
 
-  <div class="note sticky3">
-    <div class="tape"></div>
-    <div class="category">
-      <img src="images/KCCS_Cocktails.webp" alt="Menu Image" class="embedded-image">
-      <h3>COCKTAILS</h3>
-      <ul>
-        <li>Midori Sour – $7.00</li>
-        <li>Pisco Sour – $10.00</li>
-        <li>Limoncello – $5.00</li>
-        <li>White Russian – $9.00</li>
-      </ul>
-      <img src="images/KCCS_Menu.webp" alt="Menu Image" class="embedded-image">
+  <!-- Contact & Map Section -->
+  <div id="contact-container">
+
+    <div section id="contact" class="note sticky3">
+      <div class="tape"></div>
+      <h2>COME VISIT US!</h2>
+      <p>26 Caledonian Rd, London N1 9DT, UK</p>
+      <h2>TAKE NOTE!</h2>
+      <p>(Map is a placeholder screenshot. Click to enlarge image.)</p>
+      <h2>STORE HOURS</h2>
+      <p>Hours: 7am – 5pm every day</p>
+      <img src="images/KCCS_Wine_Time.webp" alt="Contact Image" class="embedded-image1">
     </div>
-    <div class="category">
-      <h3>BITES</h3>
-      <ul>
-        <li>Croissant – $9.00</li>
-        <li>Fresh Bread – $2.50</li>
-      </ul>
+
+    <div class="image-note-map">
+      <img src="images/Note_Tape2.webp" alt="Tape" class="tape">
+        <img src="images/KCCS_Map.webp" alt="KCCS Map" class="full-note-image">
     </div>
+
+    <div class="note sticky4">
+      <div class="tape"></div>
+      <h2>CONTACT US</h2>
+      <h3>GIVE US A CALL!</h3>
+      <p>+441234567890</p>
+      <img src="images/KCCS_Best_Wine.webp" alt="Contact Image" class="embedded-image">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+    </div>
+
+  </div>
+
+  <!-- Menu Section -->
+  <div id="menu-container">
+
+    <div section id="menu" class="note sticky2">
+      <div class="tape"></div>
+      <h2>VIEW OUR MENU</h2>
+      <img src="images/KCCS_Menu_Man.webp" alt="Menu Image" class="embedded-image1">
+      <p>Hot Beverages, Cocktails, and Bites!</p>
+      <h3>TAKE NOTE!</h3>
+      <p>(Sticky note height is adjustable, based on the amount of content written within the note.)</p>
+    </div>
+
+    <div class="note sticky3">
+      <div class="tape"></div>
+      <div class="category">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+        <h3>TAKE NOTE!</h3>
+        <p>(These prices are placeholders, just to see how the numbers look.)</p>
+        <img src="images/KCCS_Coffee.webp" alt="Menu Image" class="embedded-image">
+        <h3>HOT BEVERAGES</h3>
+        <ul>
+          <li>Americano – $1.50</li>
+          <li>Mocha – $3.70</li>
+          <li>Flat White – $3.50</li>
+          <li>Espresso – $2.60</li>
+          <li>Artisanal Teas – $4.00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note sticky1">
+      <div class="tape"></div>
+      <div class="category">
+        <img src="images/KCCS_Cocktails.webp" alt="Menu Image" class="embedded-image">
+        <h3>COCKTAILS</h3>
+        <ul>
+          <li>Midori Sour – $7.00</li>
+          <li>Pisco Sour – $10.00</li>
+          <li>Limoncello – $5.00</li>
+          <li>White Russian – $9.00</li>
+        </ul>
+        <img src="images/KCCS_Menu.webp" alt="Menu Image" class="embedded-image">
+      </div>
+      <div class="category">
+        <h3>BITES</h3>
+        <ul>
+          <li>Croissant – $9.00</li>
+          <li>Fresh Bread – $2.50</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -184,7 +191,7 @@
   <div class="footer-container">
     <img src="images/KCCS_LOGO_ALT.webp" alt="KCCS Logo" class="footer-logo">
     <div class="footer-text">
-      <h3>LOCATION & HOURS</h3>
+      <strong>LOCATION & HOURS</strong>
       <strong>VISIT US</strong>
       <p>26 CALEDONIAN RD, LONDON N1 9DT, UK</p>
       <p>+441234567890</p>
