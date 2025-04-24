@@ -4,16 +4,16 @@
 /*Note: This is all a placeholder and will not be in the final webpage*/
 /*as I can't tell which theme to pick*/
 :root {
-  --body-color: #FAEBD7;
-  --main-container-bg: url('images/KCCS_Background_Cream.webp') center/contain repeat;
-  --header-footer-color: #4a3323;
+  --body-color: #fcfeff;
+  --main-container-bg: url('images/KCCS_Background_Eggshell1.webp') center/contain repeat;
+  --header-footer-color: #952e30;
   --header-footer-text: #fdffff;
-  --main-header-color: #4a3323;
-  --main-header-shadow: #FAEBD7;
+  --main-header-color: #952e30;
+  --main-header-shadow: #fcfeff;
   --subheading-color: #952e30;
   --heading-color: #952e30;
-  --note-container-bg: url('images/KCCS_Design_Cream.webp') center/350px repeat;
-  --note-color: #fcfeff;
+  --note-container-bg: url('images/KCCS_Design_Eggshell.webp') center/350px repeat;
+  --note-color: #f9f6e6;
   --first-tape: url('images/Note_Tape_Red.webp');
   --second-tape: url('images/Note_Tape_Green.webp');
   --third-tape: url('images/Note_Tape_Orange.webp');
@@ -21,118 +21,111 @@
   --text-color: #4a3323;
   --nav-link-color: #8C1F25;
   --nav-hover-color: #4e7478;
-  --nav-bar-color: #f7e1bf;
+  --nav-bar-color: #fbfcf8;
 }
 
-.theme-eggshell {
-  --body-color: #f9f6e6;
-  --main-container-bg: url('images/KCCS_Background_Eggshell.webp') center/contain repeat;
-  --note-container-bg: url('images/KCCS_Design_Eggshell.webp') center/350px repeat;
-  --nav-bar-color: #f5f0da;
-}
+/*.theme-minimal {*/
+/*  --main-container-bg: url('images/KCCS_Background_Minimal.webp') center/contain repeat;*/
+/*  --nav-bar-color: #faebd7;*/
+/*}*/
 
-.theme-minimal {
-  --main-container-bg: url('images/KCCS_Background_Minimal.webp') center/contain repeat;
-  --nav-bar-color: #faebd7;
-}
+/*.theme-peach {*/
+/*  --body-color: #f0c986;*/
+/*  --main-container-bg: url('images/KCCS_Background_Peach.webp') center/contain repeat;*/
+/*  --main-header-shadow: #f9f6e6;*/
+/*  --subheading-color: #4a3323;*/
+/*  --note-container-bg: url('images/KCCS_Design_Peach.webp') center/350px repeat;*/
+/*  --note-color: #f6ead4;*/
+/*  --first-tape: url('images/Note_Tape_Green.webp');*/
+/*  --second-tape: url('images/Note_Tape_Orange.webp');*/
+/*  --third-tape: url('images/Note_Tape_Red.webp');*/
+/*  --fourth-tape: url('images/Note_Tape_Green.webp');*/
+/*  --nav-hover-color: #c9643a;*/
+/*  --nav-bar-color: #f2d39e;*/
+/*}*/
 
-.theme-peach {
-  --body-color: #f0c986;
-  --main-container-bg: url('images/KCCS_Background_Peach.webp') center/contain repeat;
-  --main-header-shadow: #f9f6e6;
-  --subheading-color: #4a3323;
-  --note-container-bg: url('images/KCCS_Design_Peach.webp') center/350px repeat;
-  --note-color: #f6ead4;
-  --first-tape: url('images/Note_Tape_Green.webp');
-  --second-tape: url('images/Note_Tape_Orange.webp');
-  --third-tape: url('images/Note_Tape_Red.webp');
-  --fourth-tape: url('images/Note_Tape_Green.webp');
-  --nav-hover-color: #c9643a;
-  --nav-bar-color: #f2d39e;
-}
+/*.theme-green {*/
+/*  --body-color: #aabba9;*/
+/*  --main-container-bg: url('images/KCCS_Background_Green.webp') center/contain repeat;*/
+/*  --header-footer-text: #f9f6e6;*/
+/*  --main-header-color: #FAEBD7;*/
+/*  --main-header-shadow: #4a3323;*/
+/*  --subheading-color: #f9f6e6;*/
+/*  --heading-color: #577478;*/
+/*  --note-container-bg: url('images/KCCS_Design_Green.webp') center/350px repeat;*/
+/*  --note-color: #FAEBD7;*/
+/*  --first-tape: url('images/Note_Tape_Red.webp');*/
+/*  --second-tape: url('images/Note_Tape_Green.webp');*/
+/*  --third-tape: url('images/Note_Tape_Orange.webp');*/
+/*  --fourth-tape: url('images/Note_Tape_Yellow.webp');*/
+/*  --nav-link-color: #4a3223;*/
+/*  --nav-hover-color: #f5f0da;*/
+/*  --nav-bar-color: #91a69a;*/
+/*}*/
 
-.theme-green {
-  --body-color: #aabba9;
-  --main-container-bg: url('images/KCCS_Background_Green.webp') center/contain repeat;
-  --header-footer-text: #f9f6e6;
-  --main-header-color: #FAEBD7;
-  --main-header-shadow: #4a3323;
-  --subheading-color: #f9f6e6;
-  --heading-color: #577478;
-  --note-container-bg: url('images/KCCS_Design_Green.webp') center/350px repeat;
-  --note-color: #FAEBD7;
-  --first-tape: url('images/Note_Tape_Red.webp');
-  --second-tape: url('images/Note_Tape_Green.webp');
-  --third-tape: url('images/Note_Tape_Orange.webp');
-  --fourth-tape: url('images/Note_Tape_Yellow.webp');
-  --nav-link-color: #4a3223;
-  --nav-hover-color: #f5f0da;
-  --nav-bar-color: #91a69a;
-}
+/*.theme-burgundy {*/
+/*  --body-color: #d28463;*/
+/*  --main-container-bg: url('images/KCCS_Background_Burgundy.webp') center/contain repeat;*/
+/*  --header-footer-color: #4a3323;*/
+/*  --header-footer-text: #f9f6e6;*/
+/*  --main-header-color: #fcfeff;*/
+/*  --main-header-shadow: #4a3323;*/
+/*  --subheading-color: #fcfeff;*/
+/*  --heading-color: #952e30;*/
+/*  --note-container-bg: url('images/KCCS_Design_Burgundy.webp') center/350px repeat;*/
+/*  --note-color: #FAEBD7;*/
+/*  --first-tape: url('images/Note_Tape_Red.webp');*/
+/*  --second-tape: url('images/Note_Tape_Green.webp');*/
+/*  --third-tape: url('images/Note_Tape_Yellow.webp');*/
+/*  --fourth-tape: url('images/Note_Tape_Green.webp');*/
+/*  --nav-link-color: #ffffff;*/
+/*  --nav-hover-color: #f5f0da;*/
+/*  --nav-bar-color: #dda385;*/
+/*}*/
 
-.theme-burgundy {
-  --body-color: #d28463;
-  --main-container-bg: url('images/KCCS_Background_Burgundy.webp') center/contain repeat;
-  --header-footer-color: #4a3323;
-  --header-footer-text: #f9f6e6;
-  --main-header-color: #fcfeff;
-  --main-header-shadow: #4a3323;
-  --subheading-color: #fcfeff;
-  --heading-color: #952e30;
-  --note-container-bg: url('images/KCCS_Design_Burgundy.webp') center/350px repeat;
-  --note-color: #FAEBD7;
-  --first-tape: url('images/Note_Tape_Red.webp');
-  --second-tape: url('images/Note_Tape_Green.webp');
-  --third-tape: url('images/Note_Tape_Yellow.webp');
-  --fourth-tape: url('images/Note_Tape_Green.webp');
-  --nav-link-color: #ffffff;
-  --nav-hover-color: #f5f0da;
-  --nav-bar-color: #dda385;
-}
+/*.theme-switcher {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  gap: 10px;*/
+/*  padding: 10px;*/
+/*  background-color: var(--header-footer-color);*/
+/*}*/
 
-.theme-switcher {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  background-color: var(--header-footer-color);
-}
+/*.theme-button {*/
+/*  padding: 8px 16px;*/
+/*  border: 2px solid var(--header-footer-color);*/
+/*  background-color: white;*/
+/*  color: var(--header-footer-color);*/
+/*  font-family: 'KCCS', sans-serif;*/
+/*  cursor: pointer;*/
+/*  border-radius: 4px;*/
+/*  transition: 0.3s ease;*/
+/*}*/
 
-.theme-button {
-  padding: 8px 16px;
-  border: 2px solid var(--header-footer-color);
-  background-color: white;
-  color: var(--header-footer-color);
-  font-family: 'KCCS', sans-serif;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: 0.3s ease;
-}
+/*.theme-button.active {*/
+/*  background-color: var(--header-footer-color);*/
+/*  color: white;*/
+/*}*/
 
-.theme-button.active {
-  background-color: var(--header-footer-color);
-  color: white;
-}
+/*!* Responsive Design for Theme Switcher Buttons *!*/
+/*@media (max-width: 600px) {*/
+/*  .theme-switcher {*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    padding: 8px 0;*/
+/*    gap: 8px;*/
+/*  }*/
 
-/* Responsive Design for Theme Switcher Buttons */
-@media (max-width: 600px) {
-  .theme-switcher {
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 0;
-    gap: 8px;
-  }
+/*  .theme-button {*/
+/*    width: 50%;*/
+/*    padding: 10px 0;*/
+/*    font-size: 1rem;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*  }*/
+/*}*/
 
-  .theme-button {
-    width: 50%;
-    padding: 10px 0;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-/* PLACEHOLDER CONTENT END */
+/*!* PLACEHOLDER CONTENT END *!*/
 
 /* Custom Typeface (KCCS) */
 /*Note: This font does not contain the Euro or Pence currency symbols*/
@@ -145,7 +138,9 @@
   font-style: normal;
 }
 
-/* Loading Animation */
+/* LOADING ANIMATIONS */
+
+/* Fade-In Loading Animation */
 @keyframes fade {
   0% {
     transform: translateY(var(--offset, 0));
@@ -175,10 +170,24 @@
   --offset: -5%;
 }
 
-/* Staggering */
+/* Fade-in Staggering */
 .nav-bar #nav-links, .nav-logo { animation-delay: 0.2s; }
 .title-container { animation-delay: 0.6s; }
 .title-logo { animation-delay: 0.8s; }
+
+/* Slow Reveal of Sticky Notes */
+.reveal-section {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s ease-out;
+}
+
+.reveal-section.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* BODY / PAGE BORDERS + MEDIA */
 
 /* Background Color Behind Everything */
 body {
@@ -187,21 +196,103 @@ body {
   font-family: 'KCCS', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
 }
 
-/* Header on top of Page for Hours */
+/* Page Borders */
+/* Outer lines */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background-color: #50654d;  /*this color is from that one IG matcha post*/
+  z-index: 100;
+  pointer-events: none;
+}
+
+body::before {
+  left: 0;
+}
+
+body::after {
+  right: 0;
+}
+
+/* Page border inner lines */
+.page-border-left,
+.page-border-right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #ba1e23; /*this color is also from that one IG matcha post*/
+  z-index: 100;
+  pointer-events: none;
+}
+
+.page-border-left {
+  left: 20px;
+}
+
+.page-border-right {
+  right: 20px;
+}
+
+/* Responsive Design for Page Borders */
+/* Page Borders are hidden on small screens / mobile */
+@media (max-width: 900px) {
+
+  body::before,
+  body::after,
+  .page-border-left,
+  .page-border-right {
+    display: none;
+  }
+}
+
+/* HEADER STUFF / MARQUEE */
+
+/* Marquee / Header on top of Page */
 .header {
   background-color: var(--header-footer-color);
   color: var(--header-footer-text);
   font-size: 1.2rem;
   text-align: center;
   padding: 10px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 200;
+  white-space: nowrap;
 }
 
+.scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 50s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* NAV BAR + MEDIA */
+
 /* Navigation Bar */
+/*Additional padding to not conflict with page borders*/
 .nav-bar {
   justify-content: space-between;
-  padding: 1em;
+  padding: 1em 45px;
   overflow: hidden;
   background-color: var(--nav-bar-color);
   position: relative;
@@ -247,391 +338,6 @@ body {
 
 .nav-bar a:hover {
   color: var(--nav-hover-color);
-}
-
-/* Main Section (Title, Subheading, Logo, Background Image) */
-.main-section {
-  position: relative;
-  width: 100%;
-  padding: 40px 0;
-  overflow: hidden;
-}
-
-/* Background Image Wrapper */
-.main-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--main-container-bg);
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
-  opacity: 0.3;
-  z-index: -2;
-}
-
-/* Main Text & Logo Wrapper*/
-/*This is primarily to center the content*/
-.content-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px;
-  gap: 40px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Main Title and Subheading Container */
-.title-container {
-  flex: 1;
-  /*text-align: left;*/
-  text-align: center;
-}
-
-/* Main Logo */
-.title-logo {
-  max-width: 350px;
-  display: block;
-  object-fit: contain;
-  margin: 10px auto;
-  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
-  transform: rotate(-5deg);
-  /*box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);*/
-  transition: transform 0.3s ease-in-out;
-}
-
-.title-logo:hover{
-  transform: rotate(3deg);
-}
-
-/* Wrapping sticky notes inside background container */
-#sticky-notes-container {
-  position: relative;
-  padding: 20px;
-}
-
-#sticky-notes-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--note-container-bg);
-  opacity: 0.3;
-  mask-image: linear-gradient(to bottom, transparent 0%,
-  rgba(0, 0, 0, 1.0) 20%, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
-  z-index: -1;
-}
-
-/* Sticky Note Containers */
-/*Referenced sticky note code from:*/
-/*https://geeksretreat.wordpress.com/2013/09/04/css3-cork-board-with-sticky-notes/*/
-#about-container, #contact-container, #menu-container {
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /*  padding: 40px;*/
-  padding: 5% 0;
-  gap: 50px;
-  /*align-items: flex-start;*/
-  align-items: center;
-}
-
-/* Sticky Notes */
-.note {
-  width: 350px;
-  min-height: 350px;
-  padding: 20px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-  border: 1px solid rgba(0,0,0,0.3);
-  background-color: var(--note-color);
-  position: relative;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 8px;
-  background-size: cover;
-  align-self: center;
-}
-
-/* If there's an Image instead of a Sticky Note */
-.image-note, .image-note-map {
-  width: 350px;
-  height: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
-  /*box-shadow: 5px 5px 10px rgba(0,0,0,0.3);*/
-  border-radius: 8px;
-}
-
-.full-note-image {
-  width: 100%;
-  /*min-height: 550px;*/
-  max-width: 550px;
-  height: auto;
-  /*border-radius: 8px;*/
-  object-fit: cover;
-  align-items: center;
-  flex-direction: column;
-}
-
-.image-note-map {
-  cursor: pointer;
-}
-
-/* When clicked, the map zooms in */
-.image-note-map.enlarged {
-  transition: transform 0.25s ease;
-  max-width: 100%;
-  height: auto;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
-  object-fit: contain;
-  z-index: 10;
-}
-
-.note:hover, .image-note:hover {
-  transform: rotate(3deg);
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Sticky Note Variations with Different Textures / Rotations */
-.sticky1 {
-  background: url('images/Note_Background1.webp') no-repeat center, var(--note-color);;
-  background-size: cover;
-  transform: rotate(-3deg);
-  background-blend-mode: multiply;
-}
-
-.sticky2 {
-  background: url('images/Note_Background2.webp') no-repeat center, var(--note-color);;
-  background-size: cover;
-  transform: rotate(2deg);
-  background-blend-mode: multiply;
-}
-
-.sticky3 {
-  background: url('images/Note_Background1.webp') no-repeat center, var(--note-color);;
-  background-size: cover;
-  transform: rotate(-1deg);
-  background-blend-mode: multiply;
-}
-
-.sticky4 {
-  background: url('images/Note_Background2.webp') no-repeat center, var(--note-color);;
-  background-size: cover;
-  transform: rotate(4deg);
-  background-blend-mode: multiply;
-}
-
-/* Tape on top of Sticky Notes */
-.tape {
-  width: 200px;
-  height: auto;
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.sticky1 .tape {
-  content: var(--first-tape);
-}
-
-.sticky2 .tape {
-  content: var(--second-tape);
-}
-
-.sticky3 .tape {
-  content: var(--third-tape);
-}
-
-.sticky4 .tape {
-  content: var(--fourth-tape);
-}
-
-/* Images Inside Notes */
-.embedded-image {
-  width: 90%;
-  height: auto;
-  max-width: 150px;
-  border-radius: 8px;
-}
-
-.embedded-image1 {
-  width: 90%;
-  height: auto;
-  max-width: 250px;
-  border-radius: 8px;
-}
-
-/* Headers for Each Section */
-h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  /*text-shadow: 4px 1px 1px #FAEBD7;*/
-  text-shadow: 4px 1px 1px var(--main-header-shadow);
-  color: var(--main-header-color) ;
-}
-
-.subheading {
-  font-size: 2rem;
-  font-style: italic;
-  color: var(--subheading-color);
-  position: relative;
-}
-
-/* Circle behind the subheader word "spot" */
-.highlight-dot {
-  position: relative;
-  z-index: 1;
-  padding: 2px 6px;
-  color: #fdffff;
-}
-
-.highlight-dot::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2.3em;
-  height: 2.3em;
-  background-color: #ec0431;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-h2 {
-  color: var(--heading-color);
-  font-size: 2rem;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  padding: 0;
-  font-weight: bold;
-}
-
-h3 {
-  color: var(--heading-color);
-  font-size: 1.5rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0;
-}
-
-/* Bullet Point Style (None) */
-ul
-{
-  list-style-type: none;
-}
-
-/* Map */
-/*Note: Not implemented yet*/
-/*#map {*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  color: #777;*/
-/*  font-style: italic;*/
-/*}*/
-
-/* Footer Style */
-footer {
-  background-color: var(--header-footer-color);
-  color: var(--header-footer-text);
-  /*padding: 20px;*/
-  padding: 30px 10%;
-  text-align: center;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Container for Footer Logo and Text */
-.footer-container {
-  display: flex;
-  justify-content: start;
-  /*align-items: flex-start;*/
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-
-/* Footer Logo */
-.footer-logo {
-  max-width: 250px;
-  height: auto;
-  margin-right: 40px;
-  flex-shrink: 0;
-  filter: invert(1);
-}
-
-/* Footer text: Heading, Paragraph, Bold */
-.footer-text {
-  text-align: left;
-}
-
-.footer-text h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.footer-text p {
-  font-size: 1rem;
-  margin: 5px 0;
-}
-
-.footer-text strong {
-  font-size: 1.2rem;
-  display: block;
-  margin-top: 15px;
-}
-
-.header, footer {
-  width: 100vw; /* Trying to make sure the content of webpage doesn't overflow header and footer */
-  margin: 0;
-  padding: 10px 0;
-}
-
-html, body {
-  overflow-x: hidden; /* Trying to make sure the content of webpage doesn't overflow header and footer */
-  width: 100%;
-}
-
-/*Note: max width numbers are currently approximations based on Chrome Dev Tools*/
-/* Responsive Design for Header Stuff */
-@media (max-width: 768px) {
-  .content-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    gap: 0;
-  }
-
-  .title-logo {
-    max-width: 60%;
-    height: auto;
-    transform: rotate(-3deg);
-  }
 }
 
 /* Responsive Design for Nav Bar */
@@ -691,24 +397,312 @@ html, body {
   }
 }
 
-/* Responsive Design for Footer */
-@media (max-width: 600px) {
-  .footer-container {
+/* MAIN SECTION + MEDIA */
+
+/* Main Section (Title, Subheading, Logo, Background Image) */
+.main-section {
+  position: relative;
+  width: 100%;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+/* Background Image Wrapper */
+.main-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--main-container-bg);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+/* Main Text & Logo Wrapper*/
+/*This is primarily to center the content*/
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Main Title and Subheading Container */
+.title-container {
+  flex: 1;
+  /*text-align: left;*/
+  text-align: center;
+}
+
+/* Main Logo */
+.title-logo {
+  max-width: 350px;
+  display: block;
+  object-fit: contain;
+  margin: 10px auto;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
+  transform: rotate(-5deg);
+  /*box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);*/
+  transition: transform 0.3s ease-in-out;
+}
+
+.title-logo:hover{
+  transform: rotate(3deg);
+}
+
+/* Responsive Design for Main Section Stuff */
+@media (max-width: 768px) {
+  .content-wrapper {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 20px 5%;
+    padding: 10px;
+    gap: 0;
   }
 
-  .footer-logo {
-    max-width: 50%;
-    margin-bottom: 10px;
-    margin-right: 0;
+  .title-logo {
+    max-width: 60%;
+    height: auto;
+    transform: rotate(-3deg);
   }
+}
 
-  .footer-text {
-    max-width: 80%;
-    text-align: center;
-  }
+/* STICKY NOTES (TITLES/CONTAINERS/DIVS) + MEDIA */
+
+/* Titles for Each Sticky Note Container */
+.title-on-tape {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.title-on-tape h2 {
+  padding: 0.5em 1.5em;
+  font-size: 2rem;
+  color: var(--heading-color);
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  display: inline-block;
+}
+
+.title-on-tape::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 90px;
+  background-image: url('images/Note_Tape_Yellow.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+/* Wrapping sticky notes inside background container */
+#sticky-notes-container {
+  position: relative;
+  padding: 20px;
+}
+
+#sticky-notes-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--note-container-bg);
+  opacity: 0.3;
+  mask-image: linear-gradient(to bottom, transparent 0%,
+  rgba(0, 0, 0, 1.0) 20%, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
+  z-index: -1;
+}
+
+/* Sticky Note Containers */
+/*Referenced sticky note code from:*/
+/*https://geeksretreat.wordpress.com/2013/09/04/css3-cork-board-with-sticky-notes/*/
+#about-container, #contact-container, #menu-container {
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*  padding: 40px;*/
+  padding: 5% 0;
+  gap: 50px;
+  /*align-items: flex-start;*/
+  align-items: center;
+}
+
+/* Sticky Notes */
+.note {
+  width: 350px;
+  /*min-height: 350px;*/
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  border: 1px solid rgba(80,101,77,0.3);
+  background-color: var(--note-color);
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-size: cover;
+  align-self: center;
+}
+
+/* If there's an Image instead of a Sticky Note */
+.image-note, .image-note-map {
+  width: 350px;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+  /*box-shadow: 5px 5px 10px rgba(0,0,0,0.3);*/
+  border-radius: 8px;
+}
+
+.full-note-image {
+  width: 100%;
+  /*min-height: 550px;*/
+  max-width: 550px;
+  height: auto;
+  object-fit: cover;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*.image-note-map {*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*!* When clicked, the map zooms in *!*/
+/*.image-note-map.enlarged {*/
+/*  transition: transform 0.25s ease;*/
+/*  max-width: 100%;*/
+/*  height: auto;*/
+/*  position: fixed;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%) scale(1.5);*/
+/*  object-fit: contain;*/
+/*  z-index: 10;*/
+/*}*/
+
+.note:hover, .image-note:hover {
+  transform: rotate(3deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Sticky Note Variations with Different Textures / Rotations */
+.sticky1 {
+  background: url('images/Note_Background1.webp') no-repeat center, linear-gradient(var(--note-color), #FCF3BDFF);;
+  background-size: cover;
+  transform: rotate(-3deg);
+  background-blend-mode: multiply;
+}
+
+.sticky2 {
+  background: url('images/Note_Background2.webp') no-repeat center, linear-gradient(var(--note-color), #fbeacc);;
+  background-size: cover;
+  transform: rotate(2deg);
+  background-blend-mode: multiply;
+}
+
+.sticky3 {
+  background: url('images/Note_Background1.webp') no-repeat center, linear-gradient(var(--note-color), #fbf4c9);;
+  background-size: cover;
+  transform: rotate(-1deg);
+  background-blend-mode: multiply;
+}
+
+.sticky4 {
+  background: url('images/Note_Background2.webp') no-repeat center, linear-gradient(var(--note-color), #fbeacc);;
+  background-size: cover;
+  transform: rotate(4deg);
+  background-blend-mode: multiply;
+}
+
+/* Tape on top of Sticky Notes */
+.tape {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sticky1 .tape {
+  content: var(--first-tape);
+}
+
+.sticky2 .tape {
+  content: var(--second-tape);
+}
+
+.sticky3 .tape {
+  content: var(--third-tape);
+}
+
+.sticky4 .tape {
+  content: var(--fourth-tape);
+}
+
+/* Images Inside Notes */
+.embedded-image {
+  width: 90%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.embedded-image1 {
+  width: 90%;
+  height: auto;
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+.inner-note-button {
+  display: block;
+  padding: 8px 15px;
+  background-color: #fbe63f;
+  color: var(--text-color);
+  text-decoration: none;
+  border: 1px solid rgba(80,101,77,0.5);
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  top: 0;
+}
+
+.inner-note-button:hover {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  top: -3px;
+  background-color: #fff176;
 }
 
 /* Responsive Design for Sticky Notes */
@@ -720,7 +714,7 @@ html, body {
 
   .note {
     width: 200px;
-    min-height: 200px;
+    /*min-height: 200px;*/
     transform: none;
     font-size: 1rem;
     margin: 10px auto;
@@ -746,11 +740,328 @@ html, body {
   }
 }
 
-@media (max-width: 705px) {
-  .image-note-map.enlarged {
-    max-width: 80%;
-    transform: translate(-50%, -50%) scale(1.5);
+/*@media (max-width: 705px) {*/
+/*  .image-note-map.enlarged {*/
+/*    max-width: 80%;*/
+/*    transform: translate(-50%, -50%) scale(1.5);*/
+/*  }*/
+/*}*/
+
+/* INSTAGRAM EMBEDS + MEDIA */
+
+/* Mobile Instagram Follow Button */
+/*This is because the standard IG embed doesn't scale well with very small screen sizes*/
+/*This replaces the IG embed*/
+/*Note: Hidden by default on large screens*/
+.mobile-instagram-social {
+  display: none;
+  text-align: center;
+  background-color: var(--note-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  border: 1px solid rgba(80,101,77,0.3);
+}
+
+.mobile-instagram-social h2 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.mobile-instagram-social .social-name {
+  font-size: 1.2rem;
+  color: var(--header-footer-color);
+  margin: 5px 0 15px;
+}
+
+.follow-button {
+  display: inline-block;
+  background-color: var(--header-footer-color);
+  color: var(--header-footer-text);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.follow-button:hover {
+  background-color: var(--nav-hover-color);
+}
+
+/* Responsive Design for Instagram Follow Button */
+@media (max-width: 400px) {
+  .mobile-instagram-social {
+    display: block;
   }
+}
+
+/* Instagram Embed Section */
+.instagram-section {
+  text-align: center;
+  padding: 2em 15px;
+  position: relative;
+  z-index: 50;
+  width: 100%;
+}
+
+.instagram-section h2 {
+  font-size: 2rem;
+  color: var(--header-footer-color);
+}
+
+.instagram-container {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 50;
+  padding-top: 30px;
+}
+
+/* Responsive Design for Instagram Embed Section (Tape/Text) */
+@media (max-width: 768px) {
+
+  .title-on-tape h2, .instagram-section h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-on-tape h2, .instagram-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive Design for Instagram Embed Section */
+/*Mainly because IG embed doesn't naturally scale very nicely on small screens*/
+@media (max-width: 768px) {
+  .instagram-section {
+    padding: 2em 15px;
+  }
+
+  .instagram-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 488px) {
+  .instagram-section {
+    padding: 1em 5%;
+    box-sizing: border-box;
+  }
+
+  .instagram-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .instagram-container blockquote.instagram-media {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .instagram-container blockquote.instagram-media > div {
+    width: 100% !important;
+  }
+}
+
+/* Responsive Design: Hide the IG Embed, Show Follow Button Instead */
+@media (max-width: 400px) {
+  .instagram-section {
+    display: none;
+  }
+
+}
+
+/* MENU DRINKS MODAL + MEDIA */
+
+/* PDF Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 1000px;
+  height: calc(100% - 40px);
+  border-radius: 4px;
+  box-shadow: 0 5px 30px rgba(0,0,0,0.5);
+  animation: modalfade 0.3s ease;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+@keyframes modal-open {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Modal's Close Button */
+.close-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0,0,0,1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--header-footer-text);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.close-button:hover {
+  background-color: rgba(0,0,0,0.8);
+  transform: scale(1.1);
+}
+
+/* Responsive Design for PDF Modal */
+@media (max-width: 400px) {
+  .pdf-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--header-footer-text);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .pdf-viewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+}
+
+/* PDF container */
+.pdf-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--header-footer-text);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* TEXT / FONT STYLES + MEDIA */
+
+/* Headers for Each Section */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  /*text-shadow: 4px 1px 1px #FAEBD7;*/
+  text-shadow: 4px 1px 1px var(--main-header-shadow);
+  color: var(--main-header-color) ;
+}
+
+.subheading {
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--subheading-color);
+  position: relative;
+}
+
+/* Switching the tape behind the words "for the locals" */
+/*Referenced code from:*/
+/*https://codepen.io/yemon/pen/pWoROm*/
+.subheading-switch-container {
+  display: inline-block;
+  height: 1.5em;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+#subheading-switch {
+  display: block;
+  animation: switch-tape 5s linear infinite;
+}
+
+#subheading-switch > span {
+  display: block;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+
+#subheading-switch > span > span {
+  display: inline-block;
+  font-size: 1em;
+  height: 1.5em;
+  line-height: 1.5em;
+  padding: 4px 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--header-footer-text);
+  text-shadow: 1px 0 0 rgba(80,101,77,0.5);
+}
+
+.tape1 {
+  background-image: var(--first-tape);
+}
+.tape2 {
+  background-image: var(--second-tape);
+}
+.tape3 {
+  background-image: var(--third-tape);
+}
+
+@keyframes switch-tape {
+  0% { margin-top: -4.5em; }
+  5% { margin-top: -3em; }
+  33% { margin-top: -3em; }
+  38% { margin-top: -1.5em; }
+  66% { margin-top: -1.5em; }
+  71% { margin-top: 0; }
+  99.99% { margin-top: 0; }
+  100% { margin-top: -4.5em; }
+}
+
+h2 {
+  color: var(--heading-color);
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0;
+  font-weight: bold;
+}
+
+h3 {
+  color: var(--heading-color);
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+/* Bullet Point Style (None) */
+ul
+{
+  list-style-type: none;
 }
 
 /* Responsive Design for Font Sizes */
@@ -759,10 +1070,10 @@ html, body {
     padding: 0 5%;
   }
 
-  .highlight-dot::before {
-    width: 2.2em;
-    height: 2.2em;
-  }
+  /*.highlight-dot::before {*/
+  /*  width: 2.2em;*/
+  /*  height: 2.2em;*/
+  /*}*/
 
   h1 {
     font-size: 2.5rem;
@@ -785,7 +1096,97 @@ html, body {
     font-size: 0.9rem;
   }
 
-  li {
-    font-size: 0.9rem;
+  /*li {*/
+  /*  font-size: 0.9rem;*/
+  /*}*/
+}
+
+/* FOOTER + MEDIA */
+
+/* Footer Style */
+footer {
+  background-color: var(--header-footer-color);
+  color: var(--header-footer-text);
+  /*padding: 20px;*/
+  padding: 30px 10%;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 200;
+  box-sizing: border-box;
+}
+
+/* Container for Footer Logo and Text */
+.footer-container {
+  display: flex;
+  justify-content: start;
+  /*align-items: flex-start;*/
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Footer Logo */
+.footer-logo {
+  max-width: 250px;
+  height: auto;
+  margin-right: 40px;
+  flex-shrink: 0;
+  filter: invert(1);
+}
+
+/* Footer text: Heading, Paragraph, Bold */
+.footer-text {
+  text-align: left;
+}
+
+.footer-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-text p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.footer-text strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 15px;
+}
+
+.header, footer {
+  width: 100vw; /* Trying to make sure the content of webpage doesn't overflow header and footer */
+  margin: 0;
+  padding: 10px 0;
+}
+
+html, body {
+  overflow-x: hidden; /* Trying to make sure the content of webpage doesn't overflow header and footer */
+  width: 100%;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 5%;
+  }
+
+  .footer-logo {
+    max-width: 50%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .footer-text {
+    max-width: 80%;
+    text-align: center;
   }
 }

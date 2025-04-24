@@ -29,20 +29,30 @@
 <body>
 
 <!-- Theme Switcher -->
-<!--Note: This will not be on the final webpage, this is because I can't choose a final theme-->
-<div class="theme-switcher">
-  <button id="default-theme" class="theme-button active">CREAM</button>
-  <button id="eggshell-theme" class="theme-button">EGGSHELL</button>
-  <button id="minimal-theme" class="theme-button">MINIMAL</button>
-  <button id="peach-theme" class="theme-button">PEACH</button>
-  <button id="green-theme" class="theme-button">GREEN</button>
-  <button id="burgundy-theme" class="theme-button">BURGUNDY</button>
+<!-- This was so I could figure out a theme for the webpage -->
+<!-- Commenting out just in case I want to compare with other theme colors in the future -->
+<!--<div class="theme-switcher">-->
+<!--  <button id="default-theme" class="theme-button active">CREAM</button>-->
+<!--  <button id="eggshell-theme" class="theme-button">EGGSHELL</button>-->
+<!--  <button id="minimal-theme" class="theme-button">MINIMAL</button>-->
+<!--  <button id="peach-theme" class="theme-button">PEACH</button>-->
+<!--  <button id="green-theme" class="theme-button">GREEN</button>-->
+<!--  <button id="burgundy-theme" class="theme-button">BURGUNDY</button>-->
+<!--</div>-->
+
+<!-- Marquee/Header for Hours -->
+<div class="header">
+  <div class="scrolling-text">Come on in! Open Monday & Sunday: 8:00 – 17:00,
+    Tuesday – Thursday: 8:00 – 23:30, and Friday & Saturday: 8:00 – 00:00
+    &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+  Be sure to follow us on Instagram to keep up to date with our latest events
+    &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
 </div>
 
-<!-- Header for Hours -->
-<div class="header">
-  OPEN EVERY DAY FROM 7am – 5pm
-</div>
+<!-- Green/Red Decorations on Sides of Page -->
+<div class="page-border-left"></div>
+<div class="page-border-right"></div>
 
 <!-- Navigation Bar -->
 <!--Referenced mobile navigation bar code from:-->
@@ -65,8 +75,21 @@
 <section id="home" class="main-section">
   <div class="content-wrapper">
     <div class="title-container">
-      <h1>KC CONTINENTAL STORES</h1>
-      <p class="subheading">For a <span class="highlight-dot">spot</span> of whimsy on Cali Road.</p>
+        <h1>KC CONTINENTAL STORES</h1>
+
+      <!--Referenced subheading switching from:-->
+      <!--https://codepen.io/yemon/pen/pWoROm-->
+      <div class="subheading">
+        Run by the locals<br />
+        <span class="subheading-switch-container">
+          <span id="subheading-switch">
+            <span><span class="tape3">for the locals</span></span>
+            <span><span class="tape2">for the locals</span></span>
+            <span><span class="tape1">for the locals</span></span>
+          </span>
+        </span>
+      </div>
+
     </div>
     <img src="images/KCCS_LOGO.webp" alt="KCCS Logo" class="title-logo">
   </div>
@@ -76,109 +99,207 @@
 <div id="sticky-notes-container">
 
   <!-- About Section -->
+  <div class="title-on-tape">
+    <h2>ABOUT KCCS</h2>
+  </div>
+
   <div id="about-container">
 
-    <div section id="about" class="note sticky1">
+    <div class="note sticky1 reveal-section">
       <div class="tape"></div>
-      <h2>ABOUT US</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-      <img src="images/KCCS_Drinks.webp" alt="About Image" class="embedded-image">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+      <h2>Who We Are</h2>
+        <p>We're a <b>community-owned cafe and bar</b> in the heart of Kings Cross.</p>
       <img src="images/KCCS_Naaz.webp" alt="About Image" class="embedded-image">
     </div>
 
-    <div class="image-note">
-      <img src="images/KCCS_Puzzle.webp" alt="About Image" class="full-note-image">
+    <div section id="about" class="note sticky3 reveal-section">
+      <div class="tape"></div>
+      <h2>Cafe, Bar & Deli</h2>
+        <p>We serve specialty coffee, fresh pastries, and handcrafted sandwiches by day. . . </p>
+      <img src="images/KCCS_Drinks.webp" alt="About Image" class="embedded-image">
+        <p>. . . and <b>by night</b>, we transform into a lively spot offering expertly made cocktails,
+          fine wines, craft beers, and indulgent charcuterie boards.</p>
     </div>
 
-    <div class="note sticky2">
+    <div class="note sticky2 reveal-section">
       <div class="tape"></div>
-      <h2>A SPOT OF WHIMSY...</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+      <h2>Ours and Yours</h2>
+        <p>We welcome people (and dogs!) of all walks of life, and strive to create a safe, inclusive, and
+          welcoming space for everyone.</p>
       <img src="images/KCCS_Drinkin.webp" alt="About Image" class="embedded-image">
     </div>
 
   </div>
 
   <!-- Contact & Map Section -->
+  <div class="title-on-tape">
+    <h2>VISIT US</h2>
+  </div>
+
   <div id="contact-container">
 
-    <div section id="contact" class="note sticky3">
+<!-- Google Maps Embed Link/iFrame -->
+    <div class="note sticky3 reveal-section">
       <div class="tape"></div>
-      <h2>COME VISIT US!</h2>
-      <p>26 Caledonian Rd, London N1 9DT, UK</p>
-      <h2>TAKE NOTE!</h2>
-      <p>(Map is a placeholder screenshot. Click to enlarge image.)</p>
-      <h2>STORE HOURS</h2>
-      <p>Hours: 7am – 5pm every day</p>
+      <h2>Come on In!</h2>
+      26 Caledonian Road, Kings Cross, N1 9DT
+      <a href="https://www.google.com/maps/dir//26+Caledonian+Rd,+London+N1+9DT,+UK/@51.5316847,
+      -0.1223628,17z/data=!4m18!1m8!3m7!1s0x48761b3ed9288aed:0x9417ba5e2644b181!2s26+Caledonian+Rd,
+      +London+N1+9DT,+UK!3b1!8m2!3d51.5316825!4d-0.1206442!16s%2Fg%2F11c2c66r_v!4m8!1m0!1m5!1m1!1s0x48761b3ed9288aed
+      :0x9417ba5e2644b181!2m2!1d-0.1206442!2d51.5316825!3e3?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D"
+         class="inner-note-button" target="_blank">Get Directions</a>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.9931913589758!2d-0.12236275483024789!
+    3d51.53168471470004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3ed9288aed%3A0x9417ba5e2644b181!
+    2s26%20Caledonian%20Rd%2C%20London%20N1%209DT%2C%20UK!5e0!3m2!1sen!2sus!4v1745391310710!5m2!1sen!2sus"
+            width="500" height="450" style="border: 1px solid rgba(80,101,77,0.3);
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.3);" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="note sticky1 reveal-section">
+      <div class="tape"></div>
+      <h2>Opening Times</h2>
+        <p><b>Monday & Sunday:</b><br />
+        8:00 – 17:00<br />
+        <b>Tuesday – Thursday:</b><br />
+        8:00 – 23:30<br />
+        <b>Friday & Saturday:</b><br />
+        8:00 – 00:00</p>
       <img src="images/KCCS_Wine_Time.webp" alt="Contact Image" class="embedded-image1">
     </div>
 
-    <div class="image-note-map">
-      <img src="images/Note_Tape2.webp" alt="Tape" class="tape">
-        <img src="images/KCCS_Map.webp" alt="KCCS Map" class="full-note-image">
+    <div class="image-note reveal-section">
+      <img src="images/KCCS_Puzzle.webp" alt="Contact Image" class="full-note-image">
     </div>
 
-    <div class="note sticky4">
+    <div section id="contact" class="note sticky4 reveal-section">
       <div class="tape"></div>
-      <h2>CONTACT US</h2>
-      <h3>GIVE US A CALL!</h3>
-      <p>+441234567890</p>
+      <h2>Give Us a Call</h2>
+      <a href="tel:441234567890" style="text-decoration:none; color:inherit;">+441234567890</a>
       <img src="images/KCCS_Best_Wine.webp" alt="Contact Image" class="embedded-image">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
+        <p>Or. . .</p>
+      <h3>Share Your Thoughts With Us</h3>
+        <p><a href="mailto:kccontinentalstores@gmail.com" style="text-decoration:none; color:inherit;">
+          kccontinentalstores<br />@gmail.com</a></p>
+    </div>
+
+    <div class="image-note reveal-section">
+      <img src="images/KCCS_Beer.webp" alt="Contact Image" class="full-note-image">
     </div>
 
   </div>
 
+<!--  Mobile Instagram Follow Button-->
+<!--  This is because the standard IG embed doesn't scale well with very small screen sizes-->
+<!--  This replaces the IG embed-->
+  <div class="mobile-instagram-social">
+    <h2>KCCS on Social</h2>
+    <p class="social-name">@kccontinentalstores</p>
+    <a href="https://www.instagram.com/kccontinentalstores" target="_blank" class="follow-button">Follow Us</a>
+  </div>
+
+  <!-- Instagram Embed Link/iFrame -->
+  <section class="instagram-section">
+
+    <div class="title-on-tape">
+      <h2>Follow Us on IG!</h2>
+    </div>
+
+    <div class="instagram-container">
+<!--This was just copied from IG embed link-->
+      <blockquote class="instagram-media"
+                  data-instgrm-permalink="https://www.instagram.com/kccontinentalstores/?utm_source=ig_embed&amp;utm_campaign=loading"
+                  data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15);
+                margin: 1px; max-width:640px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;">
+        <a href="https://www.instagram.com/kccontinentalstores/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+
+          <div style=" display: flex; flex-direction: row; align-items: center;">
+            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+              <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+              <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div>
+          <div style="padding: 19% 0;"></div>
+          <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,
+        37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,
+        55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,
+        66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,
+        74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,
+        42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,
+        25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,
+        37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,
+        21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,
+        28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,
+        76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,
+        76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;">
+          <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div></div>
+          <div style="padding: 12.5% 0;"></div>
+          <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+            <div>
+              <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px;
+          transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+              <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div>
+            <div style="margin-left: 8px;">
+              <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+              <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div>
+            <div style="margin-left: auto;">
+              <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+              <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+              <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div>
+          <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+          </div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+        <a href="https://www.instagram.com/kccontinentalstores/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">KC Continental Stores</a>
+        (@<a href="https://www.instagram.com/kccontinentalstores/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank">kccontinentalstores</a>) • Instagram photos and videos</p>
+
+      </div>
+
+      </blockquote>
+
+      <script async src="//www.instagram.com/embed.js"></script>
+
+    </div>
+
+  </section>
+
   <!-- Menu Section -->
+  <div class="title-on-tape">
+    <h2>VIEW OUR MENU</h2>
+  </div>
+
   <div id="menu-container">
 
-    <div section id="menu" class="note sticky2">
+    <div class="note sticky2 reveal-section">
       <div class="tape"></div>
-      <h2>VIEW OUR MENU</h2>
+      <h2>Check Out Our Drinks</h2>
       <img src="images/KCCS_Menu_Man.webp" alt="Menu Image" class="embedded-image1">
-      <p>Hot Beverages, Cocktails, and Bites!</p>
-      <h3>TAKE NOTE!</h3>
-      <p>(Sticky note height is adjustable, based on the amount of content written within the note.)</p>
+        <p>Featuring <b>craft beers, fine wines, and cocktails.</b></p>
     </div>
 
-    <div class="note sticky3">
-      <div class="tape"></div>
-      <div class="category">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis facilisis urna.</p>
-        <h3>TAKE NOTE!</h3>
-        <p>(These prices are placeholders, just to see how the numbers look.)</p>
-        <img src="images/KCCS_Coffee.webp" alt="Menu Image" class="embedded-image">
-        <h3>HOT BEVERAGES</h3>
-        <ul>
-          <li>Americano – $1.50</li>
-          <li>Mocha – $3.70</li>
-          <li>Flat White – $3.50</li>
-          <li>Espresso – $2.60</li>
-          <li>Artisanal Teas – $4.00</li>
-        </ul>
-      </div>
+    <div class="image-note reveal-section">
+      <img src="images/KCCS_Chefs.webp" alt="Menu Image" class="full-note-image">
     </div>
 
-    <div class="note sticky1">
+    <div section id="menu" class="note sticky1 reveal-section">
       <div class="tape"></div>
       <div class="category">
+        <h2>Full Drinks Menu</h2>
         <img src="images/KCCS_Cocktails.webp" alt="Menu Image" class="embedded-image">
-        <h3>COCKTAILS</h3>
-        <ul>
-          <li>Midori Sour – $7.00</li>
-          <li>Pisco Sour – $10.00</li>
-          <li>Limoncello – $5.00</li>
-          <li>White Russian – $9.00</li>
-        </ul>
-        <img src="images/KCCS_Menu.webp" alt="Menu Image" class="embedded-image">
+        <p><b>Available on our menu page.</b></p>
+        <a id="openMenuBtn" class="inner-note-button" >Take a Look!</a>
       </div>
-      <div class="category">
-        <h3>BITES</h3>
-        <ul>
-          <li>Croissant – $9.00</li>
-          <li>Fresh Bread – $2.50</li>
-        </ul>
+    </div>
+
+    <!-- Modal for PDF viewer -->
+    <div id="menuModal" class="modal">
+      <div class="modal-content">
+        <div class="close-button">X</div>
+        <div class="pdf-container">
+          <iframe class="pdf-viewer" src="images/KCCS_Drinks_Price_List_14.04.25.pdf"></iframe>
+        </div>
       </div>
     </div>
 
@@ -193,10 +314,14 @@
     <div class="footer-text">
       <strong>LOCATION & HOURS</strong>
       <strong>VISIT US</strong>
-      <p>26 CALEDONIAN RD, LONDON N1 9DT, UK</p>
-      <p>+441234567890</p>
+      <p>26 CALEDONIAN ROAD, KINGS CROSS, N1 9DT</p>
+      <p><a href="tel:441234567890" style="text-decoration:none; color:inherit;">+441234567890</a></p>
+      <p><a href="mailto:kccontinentalstores@gmail.com" style="text-decoration:none; color:inherit;">
+        kccontinentalstores@gmail.com</a></p>
       <strong>STORE HOURS</strong>
-      <p>7AM – 5PM EVERY DAY</p>
+      <p>MON & SUN: 8:00 – 17:00<br />
+        TUES – THURS: 8:00 – 23:30<br />
+        FRI & SAT: 8:00 – 00:00</p>
     </div>
   </div>
 </footer>
